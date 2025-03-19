@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi UTS"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:hint="Nama Kamu Siapa?" />
+
+    <EditText
+        android:id="@+id/etNim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etNama"
+        android:hint="NIM-nya Berapa?" />
+
+    <EditText
+        android:id="@+id/etProdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etNim"
+        android:hint="Dari Prodi Apa?" />
+
+    <EditText
+        android:id="@+id/etAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etProdi"
+        android:hint="Alamatnya Dimana?" />
+
+    <Button
+        android:id="@+id/btnAlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ALERT DIALOG"
+        android:layout_below="@id/etAlamat" />
+
+    <Button
+        android:id="@+id/btnToast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TOMBOL TOAST"
+        android:layout_below="@id/btnAlertDialog" />
+
+    <Button
+        android:id="@+id/btnChangeBg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GANTI WARNA BG"
+        android:layout_below="@id/btnToast" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_below="@id/btnChangeBg" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keluar"
+        android:layout_below="@id/btnReset" />
+</RelativeLayout>
